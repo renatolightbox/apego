@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    /* font-family: lato light; */
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  
+  header{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 70px;
+    /* position: fixed; */
+  }
+  
+  .nav-area{
+    list-style: none;
+  }
+
+  .nav-area li{
+    display: inline-block;
+    padding: 0 15px;
+    text-transform: uppercase;
+  }
+
+  .nav-area li a{
+    color:#0066cc;
+  }
+
+  .nav-area li a:hover{
+    color: #23a8f2;
+  }
+  
+  .btn-area{
+    cursor: pointer;
+    color: white ;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: #0066cc;
+    transition: transform 1s;
+    transform: translateX(0) scale(0.9);
+  }
+  
+  .btn-area:hover{
+    background: #004a94;
+    transform: translateX(10px) scale(1.0);
+  }
+
+h1.titulo {
+  background-color: #3566cc;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0px 80px 0px 80px;
+}
+
+body {
+  position: relative;
+}
+
+div.aviso1 {
+    z-index: -1;
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+}
+
+img.foto-quadra {
+    width: 500px;
+}
+
+div.aviso2 {
+  z-index: -1;
+  position: relative;
+  text-align: center;
+  padding-top: 20px;
+}
+
+img.foto-sala-de-festas {
+    width: 500px;
+}
+
+div.aviso3 {
+  z-index: -1;
+  position: relative;
+  text-align: center;
+  padding-top: 20px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    background-color: #3566cc;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+

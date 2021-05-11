@@ -1,0 +1,68 @@
+*{
+    
+}
+main{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:#0066cc ;
+}
+
+main.container {
+    max-width: 350px;
+    min-height: 70vh;
+    padding: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.ou{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+input#username {
+    border-color: #0066cc;
+    border-radius: 4px;
+    padding-top: 5px;
+    padding-left: 5px;
+    margin-top: 40px;
+    background-color: white;
+    cursor: text;
+}
+input#password {
+    border-color: #0066cc;
+    border-radius: 4px;
+    padding-top: 5px;
+    padding-left: 5px;
+    margin-top: 10px;
+    background-color: white;
+    cursor: text;
+}
+
+form input{
+    margin: 0.4rem;
+    padding: 0.4rem;
+    border-radius: 4px;
+    color: white;
+    background:#0066cc ;
+    cursor: pointer;
+}
+
+form input:hover{
+    letter-spacing: 0.5px;
+}
+
+.cadastro{
+    color: #0066cc ;
+    text: 12pt;
+}

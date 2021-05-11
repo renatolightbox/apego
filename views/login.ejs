@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang= "pt">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApeGo Seu administrador de condomínio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login_style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+
+
+
+<%- include('partials/header')%> 
+
+<hr color="#0066cc">
+
+
+<main class="container">
+    <h2>Login</h2>
+    <form action="action">
+        <div class="input-field"></div>
+            <input type="text" name="username" id="username" placeholder="Seu E-mail">
+            <div class="underline"></div>
+        </div>
+        <div class="input-field"></div>
+            <input type="password" name="password" id="password" placeholder="Sua Senha">
+            <div class="underline"></div>
+        </div>
+        <input class="entrar" type="submit" value="Entrar">
+    </form>
+    <div class="cadastro">
+        <div class="ou">
+        <h2><center>Ou</center></h2>
+        </div>
+        <div class="cadastro">
+            <a href="#">Cadastre-se Agora <i class="fas fa-user-check"></i></a>
+        </div>
+    </div>  
+    
+</main>
+
+
+<%- include('partials/footer')%> 
+
+</html>

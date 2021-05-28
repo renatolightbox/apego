@@ -11,6 +11,7 @@ var boletos=require('./src/routes/boletos');
 var login = require('./src/routes/login');
 var chat = require('./src/routes/chat');
 var perfil  = require('./src/routes/perfil');
+var quemSomos = require('./src/routes/quemSomos');
 
 
 var app = express();
@@ -33,6 +34,7 @@ app.use('/boletos', boletos);
 app.use('/login', login);
 app.use('/chat', chat);
 app.use('/perfil', perfil);
+app.use('/quemSomos', quemSomos);
 
 
 

@@ -1,11 +1,7 @@
 
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  
-  }
+
+
 main{
     margin: 0;
     border: 0;
@@ -54,8 +50,3 @@ p{
     justify-content: space-around;
   }
 
-  div { 
-    align-items: center;
-    text-align: center;
-  }
-  

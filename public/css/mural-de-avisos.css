@@ -24,6 +24,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 30px 70px;
+    width: 100%;
     /* position: fixed; */
   }
   
@@ -66,9 +67,9 @@ h1.titulo {
   background-color: #3566cc;
   color: white;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 35px;
   padding-bottom: 30px;
-  margin: 0px 80px 0px 80px;
+  margin: 0px 80px 30px 80px;
 }
 
 body {
@@ -79,29 +80,67 @@ div.aviso1 {
     z-index: -1;
     position: relative;
     text-align: center;
-    padding-top: 20px;
+    padding: 20px 0px 20px 0px;
+    margin: 10px 300px 10px 300px;
+    border: 30px 30px 30px 30px;
+    background-color: #3565cc2c;
+    border: 5px solid #3566cc;
 }
 
+h2.titulo-aviso {
+  margin: 10px;
+}
 img.foto-quadra {
     width: 500px;
+    margin: 30px 0px 0px 0px;
 }
 
 div.aviso2 {
   z-index: -1;
   position: relative;
   text-align: center;
-  padding-top: 20px;
+  padding: 20px 0px 20px 0px;
+  margin: 10px 300px 10px 300px;
+  border: 30px 30px 30px 30px;
+  border: 5px solid #3566cc;
+  background-color: #3565cc2c;
 }
 
 img.foto-sala-de-festas {
     width: 500px;
+    margin: 30px 0px 0px 0px;
 }
 
 div.aviso3 {
   z-index: -1;
   position: relative;
   text-align: center;
-  padding-top: 20px;
+  padding: 20px 0px 20px 0px;
+  margin: 10px 300px 10px 300px;
+  border: 30px 30px 30px 30px;
+  border: 5px solid #3566cc;
+  background-color: #3565cc2c;
+}
+
+img.foto-projeto-verde {
+  width: 500px;
+  margin: 30px 0px 0px 0px;
+}
+
+div.aviso4 {
+  z-index: -1;
+  position: relative;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  margin: 10px 300px 10px 300px;
+  border: 30px 30px 30px 30px;
+  border: 5px solid #3566cc;
+  background-color: #3565cc2c;
+}
+
+img.foto-familia-mascara {
+  width: 500px;
+  margin: 30px 0px 0px 0px;
 }
 
 footer {

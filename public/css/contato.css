@@ -76,18 +76,11 @@ body {
   position: relative;
 }
 
-div.aviso1 {
-    z-index: -1;
-    position: relative;
-    text-align: center;
-    padding: 20px 0px 20px 0px;
-    margin: 10px 300px 10px 300px;
-    border: 30px 30px 30px 30px;
-    background-color: #3565cc2c;
-    border: 5px solid #3566cc;
+div.lista-contatos {
+    padding: 30px 30px 30px 80px;
 }
 
-h2.titulo-aviso {
+h3.titulo-aviso {
   margin: 10px;
 }
 img.foto-quadra {

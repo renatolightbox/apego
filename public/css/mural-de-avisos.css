@@ -25,7 +25,6 @@
     align-items: center;
     padding: 30px 70px;
     width: 100%;
-    /* position: fixed; */
   }
   
   .nav-area{
@@ -144,15 +143,21 @@ img.foto-familia-mascara {
 }
 
 footer {
-    color: white;
-    text-align: center;
-    background-color: #3566cc;
-    width: 100%;
-    padding: 20px;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
+  color: white;
+  text-align: center;
+  background-color: #3566cc;
+  width: 100%;
+  margin: auto;
+  bottom: 0;
+  position: relative;
 }
+
+.footer-card-apego{
+padding-top: 20px;
+}
+
+.footer-icons {
+padding-bottom: 20px;
+}
+
 

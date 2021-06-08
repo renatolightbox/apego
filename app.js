@@ -13,6 +13,7 @@ var chat = require('./src/routes/chat');
 var perfil  = require('./src/routes/perfil');
 var quemSomos = require('./src/routes/quemSomos');
 var contato = require('./src/routes/contato');
+const SiteRouter = require('./src/site/site.routes')
 
 
 var app = express();
@@ -27,16 +28,17 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/menu', menu);
-app.use('/mural', mural);
-app.use('/boletos', boletos);
-app.use('/login', login);
-app.use('/chat', chat);
-app.use('/perfil', perfil);
-app.use('/quemSomos', quemSomos);
-app.use('/contato', contato)
+app.use('/', SiteRouter);
+//app.use('/users', usersRouter);
+//app.use('/menu', menu);
+//pp.use('/mural', mural);
+//app.use('/boletos', boletos);
+//app.use('/login', login);
+//app.use('/chat', chat);
+//app.use('/perfil', perfil);
+//app.use('/quemSomos', quemSomos);
+// app.use('/contato', contato);
+
 
 
 

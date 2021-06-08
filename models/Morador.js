@@ -1,8 +1,5 @@
 
-const { DataTypes } = require('sequelize');
-const { sequelize } = require('../models/index');
-
-   
+const model = (sequelize , DataType)=>{
     const Morador = sequelize.define( 'Morador' , {
         id :{
              type: DataType.INTERGER,
@@ -19,7 +16,13 @@ const { sequelize } = require('../models/index');
          tableName: 'moradores',
          timestamps: false    
     })
-    module.exports =  Morador 
+    return Morador
+
+ }
+
+
+   
+    module.exports =  model  
  
 
  

@@ -25,3 +25,10 @@ email  VARCHAR(100)
 );
 
 drop table moradores ;
+
+show tables ;
+
+describe moradores;
+select * from moradores ;
+
+insert into moradores (nome,email,unidade,senha ) values ("karina","teste@gmail.com","24", "12343") ;

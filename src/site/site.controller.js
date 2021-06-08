@@ -15,7 +15,7 @@ class SiteController {
     }
 
     static CriarLoginPage(req, res) {
-        res.render('criarLogin', { title: 'Express' });
+        res.render('CriarLogin', { title: 'Express' });
 
     }
 
@@ -43,7 +43,7 @@ class SiteController {
     }
 
     static QuemSomosPage(req, res) {
-        res.render('quem somos', { title: 'Express' });
+        res.render('QuemSomos', { title: 'Express' });
 
     }
 

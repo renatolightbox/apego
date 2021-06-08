@@ -5,14 +5,14 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var indexRouter = require('./src/routes/index');
 var usersRouter = require('./src/routes/users');
-var menu  = require('./src/routes/menu');
-var mural = require('./src/routes/mural-de-avisos');
-var boletos=require('./src/routes/boletos');
-var login = require('./src/routes/login');
-var chat = require('./src/routes/chat');
-var perfil  = require('./src/routes/perfil');
-var quemSomos = require('./src/routes/quemSomos');
-var contato = require('./src/routes/contato');
+//var menu  = require('./src/routes/menu');
+//var mural = require('./src/routes/mural-de-avisos');
+//var boletos=require('./src/routes/boletos');
+//ar login = require('./src/routes/login');
+//var chat = require('./src/routes/chat');
+//var perfil  = require('./src/routes/perfil');
+//var quemSomos = require('./src/routes/quemSomos');
+//var contato = require('./src/routes/contato');
 const SiteRouter = require('./src/site/site.routes')
 
 

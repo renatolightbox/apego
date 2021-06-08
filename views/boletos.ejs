@@ -1,166 +1,162 @@
 <!DOCTYPE html>
-<html lang= "pt">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ApeGo Seu administrador de condomínio</title>
-    <link rel="stylesheet" href="/css/boleto.css">
 
-    <link rel="shortcut icon" href="/img/favicon.ico">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</head>
-<body>
+
+
+<link rel="stylesheet" href="/css/boletos.css" <%- include('partials/head')%>
+
+<%- include('partials/header')%>
+
+  <hr color="#0066cc">
+
+
+  <body>
     <header>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-         <i class="fas fa-bars"></i>
-        </label>
-        <img class="logo" href= "#" src="/img/logo.svg" alt="">
-           <nav>
-               <ul class = "nav-area">
-                   <li><a href="#">HOME<a></a></li>
-                   <li><a href="#">QUEM SOMOS<a></a></li>
-                   <li><a href="#">SERVIÇOS<a></a></li>
-                   <li><a href="#">CONTATO<a></a></li>
-              </ul>
-           </nav>
-           <a class="btn-area" href="#">Login &nbsp;<img src="/img/admin-icon.svg" width="17px" height="17px"></a>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <img class="logo" href="#" src="/img/logo.svg" alt="">
+      <nav>
+        <ul class="nav-area">
+          <li><a href="#">HOME<a></a></li>
+          <li><a href="#">QUEM SOMOS<a></a></li>
+          <li><a href="#">SERVIÇOS<a></a></li>
+          <li><a href="#">CONTATO<a></a></li>
+        </ul>
+      </nav>
+      <a class="btn-area" href="#">Login &nbsp;<img src="/img/admin-icon.svg" width="17px" height="17px"></a>
     </header>
     <hr color="#0066cc">
     <main>
 
-           </nav>
-           <div>
+      </nav>
+      <div>
         <img src="/img/iconeboleto.jpg" alt="" width="150px" height="150px">
 
-      
-           </div>
 
-           <h1>BOLETOS </h1>
-    
+      </div>
+
+      <h1>BOLETOS </h1>
 
 
-        <section>
+
+      <section>
         <table>
-            
-
-            <tr>
-                <th>Mes</th>
-                <th>Boleto</td>
-                <th>Status</td>
-              </tr>
-
-              <tr>
-                <td>January</td>
-                <td> <img src="/img/iconedownload.jpg" alt="" width="35px" height="35px"> </td>
-                <td class="pago"> Pago </td>
-              </tr>
-
-              <tr>
-                <td>Fevereiro</td>
-                <td> <img src="/img/iconedownload.jpg" alt="" width="35px" height="35px"> </td>
-                <td class="pago"> Pago </td>
-              </tr>
-
-              <tr>
-                <td>Março</td>
-                <td> <img src="/img/iconedownload.jpg" alt="" width="35px" height="35px"> </td>
-                <td class="pago"> Pago </td>
-              </tr>
-
-              <tr>
-                <td>Abril</td>
-                <td> <img src="/img/iconedownload.jpg" alt="" width="35px" height="35px"> </td>
-                <td class ="vencido"> vencido </td>
-              <tr>
-                <td>Maio</td>
-                <td> <img src="/img/iconedownload.jpg" alt="" width="35px" height="35px"> </td>
-                <td class ="Pendente"> Pendente </td>
-              </tr>
-              <tr>
-                <td>Junho</td>
-                <td> <img src="/img/iconedownload.jpg" alt="" width="35px" height="35px"> </td>
-                <td> Pago </td>
-              </tr>
-
-              </table>
-
-              <table>
-               
-    
-                <tr>
-                    <th>Mes</th>
-                    <th>Boleto</td>
-                    <th>Status</td>
-                  </tr>
-    
-                  <tr>
-                    <td>Julho</td>
-                    <td> 
-
-                      <a href="/img/Teste boleto.pdf" download >
-                      <img src="/img/iconedownload.jpg" alt="" width="35px" height="35px"> </a> 
-                    </td>
-                    <td class ="Pendente"> Pendente </td>
-                  </tr>
-    
-                  <tr>
-                    <td>Agosto</td>
-                    <td> <img src="/img/iconedownload.jpg" alt="" width="35px" height="35px"> </td>
-                    <td> Em breve  </td>
-                  </tr>
-    
-                  <tr>
-                    <td>Setembro</td>
-                    <td> <img src="/img/iconedownload.jpg" alt="" width="35px" height="35px"> </td>
-                    <td> Em breve  </td>
-                  </tr>
-    
-                  <tr>
-                    <td>Outubro</td>
-                    <td> <img src="/img/iconedownload.jpg" alt="" width="35px" height="35px"> </td>
-                    <td> Em breve  </td>
-                  </tr>
-                  <tr>
-                    <td>Novembro</td>
-                    <td> <img src="/img/iconedownload.jpg" alt="" width="35px" height="35px"> </td>
-                    <td> Em breve  </td>
-                  </tr>
-                  <tr>
-                    <td>Dezembro</td>
-                    <td> <img src="/img/iconedownload.jpg" alt="" width="35px" height="35px"> </td>
-                    <td> Em breve </td>
-                  </tr>
-    
-                  </table>
-                  </section>
 
 
+          <tr>
+            <th>Mes</th>
+            <th>Boleto</td>
+            <th>Status</td>
+          </tr>
 
-              
+          <tr>
+            <td>January</td>
+            <td> <img src="/img/iconedownload.jpg" alt="" width="35px" height="35px"> </td>
+            <td class="pago"> Pago </td>
+          </tr>
 
-              
-            
+          <tr>
+            <td>Fevereiro</td>
+            <td> <img src="/img/iconedownload.jpg" alt="" width="35px" height="35px"> </td>
+            <td class="pago"> Pago </td>
+          </tr>
+
+          <tr>
+            <td>Março</td>
+            <td> <img src="/img/iconedownload.jpg" alt="" width="35px" height="35px"> </td>
+            <td class="pago"> Pago </td>
+          </tr>
+
+          <tr>
+            <td>Abril</td>
+            <td> <img src="/img/iconedownload.jpg" alt="" width="35px" height="35px"> </td>
+            <td class="vencido"> vencido </td>
+          <tr>
+            <td>Maio</td>
+            <td> <img src="/img/iconedownload.jpg" alt="" width="35px" height="35px"> </td>
+            <td class="Pendente"> Pendente </td>
+          </tr>
+          <tr>
+            <td>Junho</td>
+            <td> <img src="/img/iconedownload.jpg" alt="" width="35px" height="35px"> </td>
+            <td> Pago </td>
+          </tr>
+
+        </table>
+
+        <table>
+
+
+          <tr>
+            <th>Mes</th>
+            <th>Boleto</td>
+            <th>Status</td>
+          </tr>
+
+          <tr>
+            <td>Julho</td>
+            <td>
+
+              <a href="/img/Teste boleto.pdf" download>
+                <img src="/img/iconedownload.jpg" alt="" width="35px" height="35px"> </a>
+            </td>
+            <td class="Pendente"> Pendente </td>
+          </tr>
+
+          <tr>
+            <td>Agosto</td>
+            <td> <img src="/img/iconedownload.jpg" alt="" width="35px" height="35px"> </td>
+            <td> Em breve </td>
+          </tr>
+
+          <tr>
+            <td>Setembro</td>
+            <td> <img src="/img/iconedownload.jpg" alt="" width="35px" height="35px"> </td>
+            <td> Em breve </td>
+          </tr>
+
+          <tr>
+            <td>Outubro</td>
+            <td> <img src="/img/iconedownload.jpg" alt="" width="35px" height="35px"> </td>
+            <td> Em breve </td>
+          </tr>
+          <tr>
+            <td>Novembro</td>
+            <td> <img src="/img/iconedownload.jpg" alt="" width="35px" height="35px"> </td>
+            <td> Em breve </td>
+          </tr>
+          <tr>
+            <td>Dezembro</td>
+            <td> <img src="/img/iconedownload.jpg" alt="" width="35px" height="35px"> </td>
+            <td> Em breve </td>
+          </tr>
+
+        </table>
+      </section>
+
+
+
+
+
+
+
 
     </main>
     <footer>
       <section class="flex-container">
-     <div class="footer-card">
-         <p>ApeGo - 2021 - Todos os direitos reservados.</p>
-     </div>
-     <div lass="footer-card">
-         <p></p>
-     </div>
-     <div class="footer-card">
-         <img href="https://facebook.com" src="/img/face-icon-white.svg" width="30px" height="30px" hspace="15px">
-         <img href="https://instagram.com" src="/img/insta-icon-white.svg" width="30px" height="30px" hspace="15px">
-     </div>
-     </section>
-  </footer> 
+        <div class="footer-card">
+          <p>ApeGo - 2021 - Todos os direitos reservados.</p>
+        </div>
+        <div lass="footer-card">
+          <p></p>
+        </div>
+        <div class="footer-card">
+          <img href="https://facebook.com" src="/img/face-icon-white.svg" width="30px" height="30px" hspace="15px">
+          <img href="https://instagram.com" src="/img/insta-icon-white.svg" width="30px" height="30px" hspace="15px">
+        </div>
+      </section>
+    </footer>
   </body>
+
   </html>
-  
-  

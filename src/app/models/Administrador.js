@@ -4,7 +4,7 @@ const { sequelize } = require('../models/index');
 const Administrador = sequelize.define('Administrador', {
 
     id: {
-        type: DataTypes.INTEGER,
+     type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
     },

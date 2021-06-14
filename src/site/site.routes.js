@@ -14,5 +14,9 @@ router.get('/perfil' , SiteController.PerfilPage)
 router.get('/QuemSomos' , SiteController.QuemSomosPage)
 router.get('/reservas' , SiteController.ReservasPage )
 
+router.post('/morador' , SiteController.store)
+router.put('/moradores/:id' , SiteController.update)
+routes.delete('/moradores/:id' , SiteController.destroy)
+
 module.exports = router;
 

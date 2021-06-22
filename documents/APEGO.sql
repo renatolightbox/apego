@@ -1,4 +1,4 @@
-create table moradores(
+create table Usuarios(
 id INT unsigned primary KEY auto_increment, 
 nome VARCHAR(100) NOT NULL ,
 email  VARCHAR(100),

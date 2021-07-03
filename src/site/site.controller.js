@@ -15,8 +15,8 @@ class SiteController {
 
     }
 
-    static CriarLoginPage(req, res) {
-        res.render('CriarLogin', { title: 'Express' });
+    static CadastroPage(req, res) {
+        res.render('cadastro', { title: 'Express' });
 
     }
 

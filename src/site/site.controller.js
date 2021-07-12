@@ -75,7 +75,7 @@ class SiteController {
       Unidade: req.body.unidade,
       senha: req.body.senha
 }
-const user = await UserService.create(newUser)
+const user = await SiteService.create(newUser)
 res.json(user)
 }
 

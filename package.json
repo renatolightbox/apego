@@ -15,19 +15,16 @@
     "morgan": "~1.9.1",
     "mysql2": "^2.2.5",
     "sequelize": "^6.6.2"
-    
   },
   "devDependencies": {
     "nodemon": "^2.0.7",
     "sequelize-cli": "^6.2.0"
   },
-
   "main": "app.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/oculoscegos/apego.git"
   },
-
   "author": "",
   "license": "ISC",
   "bugs": {

@@ -1,25 +1,7 @@
-<!DOCTYPE html>
-<html lang= "pt">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mural de Avisos - ApêGo</title>
-    <link rel="stylesheet" href="/css/mural-de-avisos.css">
-    <link rel="shortcut icon" href="/img/favicon.ico"/>
-</head>
-<header>
-    <img class="logo" src="/img/logo.svg" alt="">
-        <nav>
-            <ul class = "nav-area">
-                <li><a href="#">HOME<a></a></li>
-                <li><a href="#">QUEM SOMOS<a></a></li>
-                <li><a href="#">SERVIÇOS<a></a></li>
-                <li><a href="#">CONTATO<a></a></li>
-            </ul>
-        </nav>
-    <a class="btn-area" href="#">Login &nbsp;<img src="/img/admin-icon.svg" width="17px" height="17px"></a>
-</header>
+<%- include('partials/head')%> 
+<%- include('partials/header')%> 
+ <link rel="stylesheet" href="/css/mural-de-avisos.css">
+    
 <body>
     <h1 class= "titulo">MURAL DE AVISOS</h1>
     
@@ -50,15 +32,4 @@
             <img src= "/img/familia-mascara.jpg" alt = "sala de festas" class= "foto-familia-mascara">
     </div>
 </body>
-<footer>
-    <section class="flex-container">
-    <div class="footer-card-apego">
-        <p>ApêGo - 2021 - Todos os direitos reservados.</p>
-    </div>
-    <div class="footer-icons">
-        <img href="https://facebook.com" src="/img/face-icon-white.svg" width="30px" height="30px" hspace="15px">
-        <img href="https://instagram.com" src="/img/insta-icon-white.svg" width="30px" height="30px" hspace="15px">
-    </div>
-    </section>
-</footer>
-</html>
+<%- include('partials/footer')%>

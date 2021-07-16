@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: lato light;
+
+  }
+
+    
+  footer{
+  
+    background: #0066cc;  
+    color: white;
+    padding: 30px;
+    display: flex;
+
+    justify-content: end;
+
+
+}
+.footer-card{
+    cursor: pointer;
+    padding: 10px;
+
+}

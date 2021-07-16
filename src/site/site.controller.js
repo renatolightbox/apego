@@ -34,7 +34,7 @@ class SiteController {
 
 
     static MuralPage(req, res) {
-        res.render('mural', { title: 'Express' });
+        res.render('mural-de-avisos', { title: 'Express' });
 
     }
 

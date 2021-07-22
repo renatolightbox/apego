@@ -1,15 +1,18 @@
 
 <%- include('partials/head')%> 
 <%- include('partials/header')%> 
-<link rel="stylesheet" href="/css/criar.css">
+<link rel="stylesheet" href="/css/cadastro.css">
 
+<body>
+<h2 class="titulo">CADASTRO</h2>
 
-    <h2>Criar Login</h2>
-    <form action="action">
+<form action="action">
+        
         <div class="input-field"></div>
             <input type="text" name="Nome" id="username" placeholder="Nome Completo">
             <div class="underline"></div>
         </div>
+       
         <div class="input-field"></div>
             <input type="text" name="email" id="email" placeholder="email">
             <div class="underline"></div>
@@ -27,11 +30,14 @@
             <input type="password" name="password" id="password" placeholder="Sua Senha">
             <div class="underline"></div>
         </div>
-        <input class="entrar" type="submit" value="Entrar">
+
+        <button class="botao" type="submit" onsubmit="">Cadastrar</button>
+
     </form>
     
         <div class="cadastro">
             <a href="http://localhost:3000/cadastro">entrar <i class="fas fa-user-check"></i></a>
         </div>
-    </div>  
+    </div>
+</body> 
     <%- include('partials/footer')%>

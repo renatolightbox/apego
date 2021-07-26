@@ -1,22 +1,30 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-var indexRouter = require('./src/routes/index');
-var usersRouter = require('./src/routes/users');
-//var menu  = require('./src/routes/menu');
-//var mural = require('./src/routes/mural-de-avisos');
-//var boletos=require('./src/routes/boletos');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan')
+
+const indexRouter = require('./modules/site/site.routes')
+
+const { configureSession } = require('./middlewares/session')
+
+const app = express();
+
+
+
+//const usersRouter = require('./routes/users');
+//const menu  = require('./src/routes/menu');
+//const mural = require('./src/routes/mural-de-avisos');
+//const boletos=require('./src/routes/boletos');
 //ar login = require('./src/routes/login');
-//var chat = require('./src/routes/chat');
-//var perfil  = require('./src/routes/perfil');
-//var quemSomos = require('./src/routes/quemSomos');
-//var contato = require('./src/routes/contato');
-const SiteRouter = require('./src/site/site.routes')
+//const chat = require('./src/routes/chat');
+//const perfil  = require('./src/routes/perfil');
+//const quemSomos = require('./src/routes/quemSomos');
+//const contato = require('./src/routes/contato');
+//const SiteRouter = require('./modules/site/site.routes')
 
 
-var app = express();
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -26,9 +34,11 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../public')));
 
-app.use('/', SiteRouter);
+configureSession(app)
+
+app.use('/', indexRouter);
 //app.use('/users', usersRouter);
 //app.use('/menu', menu);
 //pp.use('/mural', mural);

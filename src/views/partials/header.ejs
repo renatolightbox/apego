@@ -1,17 +1,15 @@
-<!-- colocar if login else -->
 
-
-       <header>
-           <a href="http://localhost:3000 "><img src="/img/logo.svg" class="logo"/> </a>
-           <ul>
-               <li><a href="http://localhost:3000 ">HOME</a></li>
-               <li><a href="http://localhost:3000/menu">MENU</a></li>
-               <li><a href="http://localhost:3000/QuemSomos ">QUEM SOMOS</a></li>
-               <li><a href="http://localhost:3000/login">LOGIN</a></li>
-               <li><a href="http://localhost:3000/cadastro">CADASTRAR</a></li>
-               <li><a href="http://localhost:3000/contato">CONTATO</a></li>
-           </ul>
-       </header> 
-       <link rel="stylesheet" href="/css/header2.css">
-
-       
+<header>
+    <a href="http://localhost:3000 "><img src="/img/logo.svg" class="logo" /> </a>
+    <ul>
+        <li><a href="/QuemSomos ">QUEM SOMOS</a></li>
+        <li><a href="/contato">CONTATO</a></li>
+        <% if (locals.isLogged) { %>
+            <li><a href="/logout">LOGOUT</a></li>
+            <% } else { %>
+                <li><a href="/login">LOGIN</a></li>
+                <li><a href="/cadastro">CADASTRAR</a></li>
+                <% } %>
+    </ul>
+</header>
+<link rel="stylesheet" href="/css/header2.css">

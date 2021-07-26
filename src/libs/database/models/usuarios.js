@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
 
     Usuarios.init(
         {
-            nome: DataTypes.STRING,
+            name: DataTypes.STRING,
             email: DataTypes.STRING,
             condominio: DataTypes.STRING,
             unidade: DataTypes.STRING,
@@ -18,6 +18,7 @@ module.exports = (sequelize, DataTypes) => {
         {
             sequelize,
             paranoid: true,
+            tableName: 'usuarios',
             modelName: 'Usuarios'
         }
     )

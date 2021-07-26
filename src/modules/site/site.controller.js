@@ -1,5 +1,6 @@
+const { locals } = require('../../app');
 const AuthService = require('../auth/auth.service');
-const SiteService = require('../users/users.service')
+const UserService= require('../users/users.service')
 
 class SiteController {
     static BoletosPage(req, res) {
@@ -22,6 +23,9 @@ class SiteController {
     }
 
     static IndexPage(req, res) {
+      if (res.locals.isLogged) {
+        return res.redirect('/menu')
+      }
         res.render('index', { title: 'Express' });
     }
 
@@ -155,10 +159,10 @@ static async remove (req, res) {
       }
 
       static async doLogin (req, res) {
-        const { email, password } = req.body
+        const { username, password } = req.body
     
         try {
-          const user = await AuthService.authenticate(email, password)
+          const user = await AuthService.authenticate(username, password)
     
           if (!user) {
             return res.render('login', {

@@ -1,34 +1,42 @@
-<%- include('partials/head')%> 
-<%- include('partials/header')%> 
-<link rel="stylesheet" href="/css/login_style.css">
+<%- include('partials/head')%>
+    <%- include('partials/header')%>
+        <link rel="stylesheet" href="/css/login_style.css">
 
 
 
 
-<main class="container">
-    <h2>Login</h2>
-    <form action="action">
-        <div class="input-field"></div>
-            <input type="text" name="username" id="username" placeholder="Seu E-mail">
-            <div class="underline"></div>
-        </div>
-        <div class="input-field"></div>
-            <input type="password" name="password" id="password" placeholder="Sua Senha">
-            <div class="underline"></div>
-        </div>
-        <input class="entrar" type="submit" value="Entrar">
-    </form>
-    <div class="cadastro">
-        <div class="ou">
-        <h2><center>Ou</center></h2>          
-        </div>
-        <div class="cadastro">
-            <a href="http://localhost:3000/cadastro">Cadastre-se Agora <i class="fas fa-user-check"></i></a>
-        </div>
-    </div>  
-    
-</main>
+        <main class="container">
+            <% if (locals.error) { %>
+                <%= locals.error %>
+
+                    <%} %>
 
 
-<%- include('partials/footer')%> 
+                        <h2>Login</h2>
+                        <form action="/login" method="post">
+                            <div class="input-field"></div>
+                            <input type="text" name="username" id="username" placeholder="Seu E-mail">
+                            <div class="underline"></div>
+                            </div>
+                            <div class="input-field"></div>
+                            <input type="password" name="password" id="password" placeholder="Sua Senha">
+                            <div class="underline"></div>
+                            </div>
+                            <input class="entrar" type="submit" value="Entrar">
+                        </form>
+                        <div class="cadastro">
+                            <div class="ou">
+                                <h2>
+                                    <center>Ou</center>
+                                </h2>
+                            </div>
+                            <div class="cadastro">
+                                <a href="http://localhost:3000/cadastro">Cadastre-se Agora <i
+                                        class="fas fa-user-check"></i></a>
+                            </div>
+                        </div>
 
+        </main>
+
+
+        <%- include('partials/footer')%>

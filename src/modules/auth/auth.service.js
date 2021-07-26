@@ -3,11 +3,12 @@ const { hash, verify } = require('../../libs/cipher')
 const UserService = require('../users/users.service')
 
 class AuthService {
-  static async authenticate (email, password) {
+  static async authenticate(email, password) {
     try {
-      const user = await SiteService.findByEmail(email)
+      const user = await UserService.findByEmail(email)
+      console.log(user)
 
-      if (user && verify(password, user.password)) {
+      if (user && verify(password, user.senha)) {
         return user
       }
 

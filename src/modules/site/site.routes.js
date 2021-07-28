@@ -12,6 +12,7 @@ router.get('/login' , SiteController.LoginPage)
 router.get('/mural-de-avisos' ,SiteController.MuralPage)
 router.get('/perfil' , SiteController.PerfilPage)
 router.get('/QuemSomos' , SiteController.QuemSomosPage)
+router.get('/contas' , SiteController.ContasPage)
 //router.get('/reservas' , SiteController.ReservasPage )
 
 router.get('/cadastro/:id', SiteController.findById)

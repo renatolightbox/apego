@@ -1,4 +1,4 @@
-const { locals } = require('../../app');
+//
 const AuthService = require('../auth/auth.service');
 const UserService= require('../users/users.service')
 
@@ -52,6 +52,11 @@ class SiteController {
         res.render('QuemSomos', { title: 'Express' });
 
     }
+
+    static ContasPage(req, res) {
+      res.render('contas', { title: 'Express' });
+
+  }
 
    // static ReservasPage(req, res) {
      //   res.render('reservas', { title: 'Express' });

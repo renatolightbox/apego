@@ -122,9 +122,23 @@ form input:hover{
 }
 
 .botao {
-    width: 100px;
-    height: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: #0066cc;
+    border: 1px solid #0066cc;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
     cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+}
+
+
+.botao:hover {
+    background-color: #fff;
+    border: 1px solid #0066cc;
+    color: #0066cc;
 }

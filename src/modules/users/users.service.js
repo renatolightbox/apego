@@ -22,7 +22,7 @@ class UserService {
     }
   
     static create (userToSave) {
-      userToSave.password = hash(userToSave.password)
+      userToSave.senha = hash(userToSave.senha)
   
       return Usuarios.create(userToSave)
     }

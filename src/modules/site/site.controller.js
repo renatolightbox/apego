@@ -128,8 +128,8 @@ class SiteController {
 
 
   static async PerfilPage(req, res) {
-    const userEmail = req.session.user.email
-    const user = await UserService.findByEmail(userEmail)
+    const email = req.session.user.email
+    const user = await UserService.findByEmail(email)
 
     res.render('perfil', { title: 'APP profile', user })
   }

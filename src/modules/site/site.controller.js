@@ -7,10 +7,10 @@ class SiteController {
     res.render('boletos', { title: 'Express' });
   }
 
-  // static ChatPage(req, res) {
-  //   res.render('chat', { title: 'Express' });
+   static ChatPage(req, res) {
+    res.render('chat', { title: 'Express' });
 
-  // }
+   }
 
   static ContatoPage(req, res) {
     res.render('contato', { title: 'Express' });
@@ -58,9 +58,9 @@ class SiteController {
 
   }
 
-  // static ReservasPage(req, res) {
-  //   res.render('reservas', { title: 'Express' });
-  // }
+   static ReservasPage(req, res) {
+    res.render('reservas', { title: 'Express' });
+  }
 
   static async findAll(req, res) {
     const user = await SiteService.findAll()
@@ -127,12 +127,12 @@ class SiteController {
 
 
 
-  static async PerfilPage(req, res) {
-    const email = req.session.user.email
-    const user = await UserService.findByEmail(email)
+ // static async PerfilPage(req, res) {
+   // const email = req.session.user.email
+   // const user = await UserService.findByEmail(email)
 
-    res.render('perfil', { title: 'APP profile', user })
-  }
+    //res.render('perfil', { title: 'APP profile', user })
+  //}
 
   static LoginPage(req, res) {
     res.render('login', {

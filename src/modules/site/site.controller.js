@@ -1,4 +1,4 @@
-//
+//const {locals} = require('../../app')
 const AuthService = require('../auth/auth.service');
 const UserService = require('../users/users.service')
 
@@ -7,10 +7,10 @@ class SiteController {
     res.render('boletos', { title: 'Express' });
   }
 
-   static ChatPage(req, res) {
-    res.render('chat', { title: 'Express' });
+  // static ChatPage(req, res) {
+   // res.render('chat', { title: 'Express' });
 
-   }
+  // }
 
   static ContatoPage(req, res) {
     res.render('contato', { title: 'Express' });
@@ -58,18 +58,18 @@ class SiteController {
 
   }
 
-   static ReservasPage(req, res) {
-    res.render('reservas', { title: 'Express' });
-  }
+   //static ReservasPage(req, res) {
+  //  res.render('reservas', { title: 'Express' });
+ // }
 
   static async findAll(req, res) {
     const user = await SiteService.findAll()
 
   }
 
-  static async findAll(req, res) {
-    const user = await SiteService.findAll()
-  }
+  //static async findAll(req, res) {
+   // const user = await SiteService.findAll()
+  //}
 
 
 
@@ -89,8 +89,7 @@ class SiteController {
       unidade: req.body.unidade,
       senha: req.body.senha
     }
-    console.log(newUser)
-
+   
 
     const user = await UserService.create(newUser)
     res.json(user)
@@ -101,7 +100,7 @@ class SiteController {
       const { id } = req.params
 
       const userData = {
-        name: req.body.nome,
+        name: req.body.name,
         email: req.body.email,
         condominio: req.body.condominio,
         unidade: req.body.unidade,
@@ -127,12 +126,12 @@ class SiteController {
 
 
 
- // static async PerfilPage(req, res) {
-   // const email = req.session.user.email
-   // const user = await UserService.findByEmail(email)
+ static async PerfilPage(req, res) {
+   const userEmail = req.session.user.email
+ const user = await UserService.findByEmail(userEmail)
 
-    //res.render('perfil', { title: 'APP profile', user })
-  //}
+    res.render('perfil', { title: 'APP profile', user })
+  }
 
   static LoginPage(req, res) {
     res.render('login', {

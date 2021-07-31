@@ -14,11 +14,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-color: #fff;
     box-sizing: border-box;
     flex-direction: column;
     color:#0066cc;
+    padding-top: 50px;
 }
 
 .title {
@@ -46,20 +46,6 @@ body {
     margin: 8px;
 }
 
-.ou{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    justify-content: center;
-}
-
-.cadastro{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    justify-content: center;
-    color: #0066cc;
-    font: 12pt;
-}
-
 .btn {
     border-radius: 15px;
     text-transform: uppercase;
@@ -78,4 +64,12 @@ body {
 .btn:hover {
     background-color: #fff;
     color: #0066cc;
+}
+
+.cadastro {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    color: #0066cc;
+    font: 12pt;
 }

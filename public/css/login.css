@@ -53,11 +53,14 @@ body {
 }
 
 .cadastro{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
     color: #0066cc;
     font: 12pt;
 }
 
-.entrar {
+.btn {
     border-radius: 15px;
     text-transform: uppercase;
     color: #fff;
@@ -72,7 +75,7 @@ body {
     border: 1px solid #0066cc;
 }
 
-.entrar:hover {
+.btn:hover {
     background-color: #fff;
     color: #0066cc;
 }

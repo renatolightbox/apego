@@ -4,42 +4,30 @@
 <link rel="stylesheet" href="/css/cadastro.css">
 
 <body>
-<h2 class="titulo">CADASTRO</h2>
-
-<form action="/cadastro" method="POST">
-        
-        <div class="input-field"></div>
-            <input type="text" name="name" id="name" placeholder="Nome Completo">
-            <div class="underline"></div>
-        </div>
-       
-        <div class="input-field"></div>
-            <input type="text" name="email" id="email" placeholder="email">
-            <div class="underline"></div>
-        </div>
-       
-        <div class="input-field"></div>
-            <input type="text" name="condominio" id="condominio" placeholder="condominio">
-            <div class="underline"></div>
-        </div>
-
-        <div class="input-field"></div>
-        <input type="text" name="unidade" id="unidade" placeholder="unidade">
-        <div class="underline"></div>
+    <div class="container">
+        <h2 class="titulo">CADASTRO</h2>
+        <form class="form" action="/cadastro" method="POST">
+            <label class="label-input">
+                <input type="text" placeholder="Nome">
+            </label>
+            <label class="label-input">
+                <input type="email" placeholder="E-mail">
+            </label>
+            <label class="label-input">
+                <input type="text" placeholder="Condomínio">
+            </label>
+            <label class="label-input">
+                <input type="text" placeholder="Unidade">
+            </label>
+            <label class="label-input">
+                <input type="password" placeholder="Senha">
+            </label>
+            <button class="btn" type="submit">CADASTRAR</button>
+        </form>
     </div>
-
-        <div class="input-field"></div>
-            <input type="password" name="senha" id="senha" placeholder="Sua Senha">
-            <div class="underline"></div>
-        </div>
-
-        <button class="botao" type="submit" >CADASTRAR</button>
-
-    </form>
-    
-        <div class="cadastro">
-            <a href="http://localhost:3000/cadastro">entrar <i class="fas fa-user-check"></i></a>
-        </div>
+    <div class="cadastro">
+         <p><a href="http://localhost:3000/cadastro">Clique aqui para entrar!<i class="fas fa-user-check"></i></a></p>
     </div>
-</body> 
-    <%- include('partials/footer')%>
+</body>
+
+<%- include('partials/footer')%>

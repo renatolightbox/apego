@@ -1,12 +1,12 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap')
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
+
 body {
   /*font-weight: 600;*/
   font-size: 16px;
@@ -147,6 +147,7 @@ footer{
   .ckeckbtn{
   display: block;
   }
+
   ul{
     position: fixed;
     width: 100%;
@@ -164,6 +165,8 @@ footer{
     display: grid;
     max-height: 50%
   }
-  .nav-area li a:hover{
+
+.nav-area li a:hover{
     color: #23a8f2;
+}
 }

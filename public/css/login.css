@@ -4,27 +4,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
 }
 
-main{
-    margin: 0;
-    border: 0;
-    padding: 0;
-    box-sizing: border-box;
-    min-height: 100vh;
-    min-width: 100vw;
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    box-sizing: border-box;
     flex-direction: column;
-    color:#0066cc ;
-}
-
-main.container {
-    max-width: 350px;
-    min-height: 70vh;
-    padding: 2rem;
+    color:#0066cc;
 }
 
 .title {

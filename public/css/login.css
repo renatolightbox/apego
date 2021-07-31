@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 *{
   margin: 0;
@@ -27,6 +27,10 @@ main.container {
     padding: 2rem;
 }
 
+.title {
+    font-weight: 900;
+}
+
 form{
     display: flex;
     flex-direction: column;
@@ -35,6 +39,7 @@ form{
 .ou{
     margin-top: 30px;
     margin-bottom: 30px;
+    justify-content: center;
 }
 input#username {
     border-color: #0066cc;
@@ -55,19 +60,27 @@ input#password {
     cursor: text;
 }
 
-form input{
-    margin: 0.4rem;
-    padding: 0.4rem;
-    border-radius: 4px;
-    background:#0066cc ;
-    cursor: pointer;
-}
-
-form input:hover{
-    letter-spacing: 0.5px;
-}
-
 .cadastro{
     color: #0066cc;
     font: 12pt;
+}
+
+.entrar {
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    margin-top: 1rem;
+    background-color: #0066cc;
+    border: 1px solid #0066cc;
+}
+
+.entrar:hover {
+    background-color: #fff;
+    color: #0066cc;
 }

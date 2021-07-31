@@ -7,8 +7,8 @@ class UserService {
       return Usuarios.findAll()
     }
 
-    static findById (userId) {
-      const user = userList.find(user => user.id == userId)
+    static  async findById (userId) {
+      const user = await Usuarios.findByPk(userId)
 
       return user
   }

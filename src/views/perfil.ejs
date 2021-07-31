@@ -8,14 +8,20 @@
         <img src="/img/iconeperfil.jpg" width="150px" height="150px">
       
         <h1>PERFIL </h1>
+
+        
+        <% if (locals.message) { %>
+          <%= locals.message %>
+      <%} %>
+
       
       </div>
-      
+      <form action="/perfil" method="post"> 
       <div class="container ">
         <div class="nome">
       
           <h3>Nome</h3>
-          <P> Karina </P>
+         <input value="<%= user.name %>" name="name" />  
       
           <br>
       
@@ -23,7 +29,7 @@
         <div class="email">
       
           <h3>EMAIL</h3>
-          <P>teste@gmail.com</P>
+          <p>  "<%= user.email %>"  </p> 
       
           <br>
         </div>
@@ -31,17 +37,21 @@
         <div class="condominio">
       
           <h3>CONDOMINIO</h3>
-          <p> teste</p>
-      
+           <input value="<%= user.condominio %>" name="condominio" />  
+
+
           <br>
         </div>
       
         <div class="unidade">
           <h3>UNIDADE</h3>
-          <p>25</p>
+          <input value="<%= user.unidade %>" name="unidade" /> 
           <br>
         </div>
+
+        <button class="btn" type="submit">SALVAR</button> 
       </div>
+    </form>
       
       
 

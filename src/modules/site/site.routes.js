@@ -18,7 +18,8 @@ router.get('/contas' , SiteController.ContasPage)
 router.get('/cadastro/:id', SiteController.findById)
 router.get('/login/:id', SiteController.findById)
 
-router.post('/cadastro' , SiteController.create)
+router.post('/cadastro' , SiteController.doRegister)
+router.post('/perfil' , SiteController.update)
 
 router.put('/cadastro/:id', SiteController.update)
 router.put('/login/:id', SiteController.update)
@@ -30,7 +31,7 @@ router.delete('/login/:id', SiteController.remove)
 router.post('/login', SiteController.doLogin)
 router.get('/logout', SiteController.doLogout)
 
-router.post('/register', SiteController.doRegister)
+
 
 
 module.exports = router;

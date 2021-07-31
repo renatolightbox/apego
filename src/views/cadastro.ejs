@@ -5,22 +5,28 @@
 
 <body>
     <div class="container">
+
+        <% if (locals.error) { %>
+            <%= locals.error %>
+        <%} %>
+
+        
         <h2 class="titulo">CADASTRO</h2>
         <form class="form" action="/cadastro" method="POST">
             <label class="label-input">
-                <input type="text" placeholder="Nome">
+                <input type="text"  name="username" placeholder="Nome">
             </label>
             <label class="label-input">
-                <input type="email" placeholder="E-mail">
+                <input type="email" name="email" placeholder="E-mail">
             </label>
             <label class="label-input">
-                <input type="text" placeholder="Condomínio">
+                <input type="text" name="condominio" placeholder="Condomínio">
             </label>
             <label class="label-input">
-                <input type="text" placeholder="Unidade">
+                <input type="text" name="unidade" placeholder="Unidade">
             </label>
             <label class="label-input">
-                <input type="password" placeholder="Senha">
+                <input type="password"   name="senha" placeholder="Senha">
             </label>
             <button class="btn" type="submit">CADASTRAR</button>
         </form>

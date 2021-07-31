@@ -1,6 +1,7 @@
 //const {locals} = require('../../app')
 const AuthService = require('../auth/auth.service');
-const UserService = require('../users/users.service')
+const UserService = require('../users/users.service');
+
 
 class SiteController {
   static BoletosPage(req, res) {
@@ -8,7 +9,7 @@ class SiteController {
   }
 
   // static ChatPage(req, res) {
-   // res.render('chat', { title: 'Express' });
+  // res.render('chat', { title: 'Express' });
 
   // }
 
@@ -34,6 +35,7 @@ class SiteController {
   }
 
   static MenuPage(req, res) {
+    console.log(req.session)
     res.render('menu', { title: 'Express' });
   }
 
@@ -43,8 +45,11 @@ class SiteController {
 
   }
 
-  static PerfilPage(req, res) {
-    res.render('perfil', { title: 'Express' });
+  static async PerfilPage(req, res) {
+    const user = await UserService.findById(req.session.user.id)
+
+    res.render('perfil', { title: 'Express', user });
+
 
   }
 
@@ -58,9 +63,9 @@ class SiteController {
 
   }
 
-   //static ReservasPage(req, res) {
+  //static ReservasPage(req, res) {
   //  res.render('reservas', { title: 'Express' });
- // }
+  // }
 
   static async findAll(req, res) {
     const user = await SiteService.findAll()
@@ -68,7 +73,7 @@ class SiteController {
   }
 
   //static async findAll(req, res) {
-   // const user = await SiteService.findAll()
+  // const user = await SiteService.findAll()
   //}
 
 
@@ -89,29 +94,27 @@ class SiteController {
       unidade: req.body.unidade,
       senha: req.body.senha
     }
-   
+
 
     const user = await UserService.create(newUser)
     res.json(user)
   }
 
   static async update(req, res) {
+
     try {
-      const { id } = req.params
+      console.log(req.session)
+      const user = await UserService.findById(req.session.user.id)
+      user.name = req.body.name
+      user.condominio=req.body.condominio
+      user.unidade=req.body.unidade
+      await user.save()
+     
+      res.render('perfil', { title: 'Express', user ,message:"usuario atualizado com sucesso "});
 
-      const userData = {
-        name: req.body.name,
-        email: req.body.email,
-        condominio: req.body.condominio,
-        unidade: req.body.unidade,
-       
 
-      }
-
-      const userUpdated = await SiteService.update(id, userData)
-
-      res.json(userUpdated)
     } catch (err) {
+      console.log(err)
       res.status(400).json(err)
     }
   }
@@ -126,9 +129,9 @@ class SiteController {
 
 
 
- static async PerfilPage(req, res) {
-   const userEmail = req.session.user.email
- const user = await UserService.findByEmail(userEmail)
+  static async PerfilPage(req, res) {
+    const userEmail = req.session.user.email
+    const user = await UserService.findByEmail(userEmail)
 
     res.render('perfil', { title: 'APP profile', user })
   }
@@ -143,12 +146,13 @@ class SiteController {
   static async doRegister(req, res) {
     try {
       const newUser = {
-        name: req.body.name,
+        name: req.body.username,
         email: req.body.email,
         condominio: req.body.condominio,
         unidade: req.body.unidade,
         senha: req.body.senha
       }
+
 
       const user = await UserService.create(newUser)
 
@@ -158,7 +162,7 @@ class SiteController {
     } catch (err) {
       console.log(err)
 
-      res.render('register', {
+      res.render('cadastro', {
         title: 'APP Cadastro',
         error: err.message
       })

@@ -10,14 +10,17 @@
     "seed": "npx sequelize db:seed:all"
   },
   "dependencies": {
+    "bootstrap": "^4.0.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
     "express-session": "^1.17.2",
     "http-errors": "~1.6.3",
+    "jquery": "^3.6.0",
     "morgan": "~1.9.1",
     "mysql2": "^2.2.5",
+    "popper.js": "^1.16.1",
     "sequelize": "^6.6.5"
   },
   "devDependencies": {
@@ -35,5 +38,6 @@
     "url": "https://github.com/oculoscegos/apego/issues"
   },
   "homepage": "https://github.com/oculoscegos/apego#readme",
-  "description": "O ApêGo é uma plataforma web que tem como objetivo contribuir para a comunicação entre moradores e administradores de condomínios, tornando-a mais acessível e flexível."
+  "description": "O ApêGo é uma plataforma web que tem como objetivo contribuir para a comunicação entre moradores e administradores de condomínios, tornando-a mais acessível e flexível.",
+  "keywords": []
 }

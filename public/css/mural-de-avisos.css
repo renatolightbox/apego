@@ -13,6 +13,27 @@
     font-size: 16px;
   }
 
+
+  .logo {
+    text-align: center;
+    color:#0066cc;
+    padding-bottom: 10px ;
+     border: 30px;
+     align-items: center;
+     padding-top: 10px;
+  }
+ 
+ 
+     h2{
+          
+       color: #0066cc;
+       justify-content: center;
+       margin-bottom: 20px;
+       font-weight: 900;
+       padding: 10px;
+    
+    }
+
   a{
     text-decoration: none;
   }
@@ -85,7 +106,8 @@ div.aviso1 {
     margin: 10px 300px 10px 300px;
     border: 30px 30px 30px 30px;
     background-color: #3565cc2c;
-    border: 5px solid #3566cc;
+    border: 1px solid #3566cc;
+    border-radius: 10px;
 }
 
 h2.titulo-aviso {
@@ -103,8 +125,9 @@ div.aviso2 {
   padding: 20px 0px 20px 0px;
   margin: 10px 300px 10px 300px;
   border: 30px 30px 30px 30px;
-  border: 5px solid #3566cc;
   background-color: #3565cc2c;
+  border: 1px solid #3566cc;
+    border-radius: 10px;
 }
 
 img.foto-sala-de-festas {
@@ -119,7 +142,8 @@ div.aviso3 {
   padding: 20px 0px 20px 0px;
   margin: 10px 300px 10px 300px;
   border: 30px 30px 30px 30px;
-  border: 5px solid #3566cc;
+  border: 1px solid #3566cc;
+  border-radius: 10px;
   background-color: #3565cc2c;
 }
 
@@ -135,7 +159,8 @@ div.aviso4 {
   padding: 20px 0px 20px 0px;
   margin: 10px 300px 10px 300px;
   border: 30px 30px 30px 30px;
-  border: 5px solid #3566cc;
+  border: 1px solid #3566cc;
+    border-radius: 10px;
   background-color: #3565cc2c;
 }
 

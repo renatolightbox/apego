@@ -10,11 +10,11 @@
           <%= locals.message %>
       <%} %>
 
-    
-        <img src="/img/iconeperfil.jpg" width="150px" height="150px">
-      
-        <h1>PERFIL</h1>
-
+          
+        <div class="logo">
+          <img src="/img/iconeperfil.jpg"  alt="" width="120px" height="120px">
+          <h2>PERFIL </h2>
+          </div>
         
       
       <form class="form" action="/perfil" method="post"> 
@@ -22,7 +22,7 @@
         <div class="nome">
       
           <h3>NOME</h3>
-         <input value="<%= user.name %>" name="name" />  
+         <input class="nome" value="<%= user.name %>" name="name" />  
       
     
       
@@ -30,7 +30,7 @@
         <div class="email">
       
           <h3>EMAIL</h3>
-          <p>  "<%= user.email %>"  </p> 
+          <p class="email">  "<%= user.email %>"  </p> 
       
         </div>
       

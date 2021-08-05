@@ -3,27 +3,28 @@
 
     <%- include('partials/header')%> 
     <link rel="stylesheet" href="/css/perfil.css">
+    <body>
+      <div class="container ">
 
-    <div>
-        <img src="/img/iconeperfil.jpg" width="150px" height="150px">
-      
-        <h1>PERFIL </h1>
-
-        
         <% if (locals.message) { %>
           <%= locals.message %>
       <%} %>
 
+    
+        <img src="/img/iconeperfil.jpg" width="150px" height="150px">
       
-      </div>
-      <form action="/perfil" method="post"> 
-      <div class="container ">
+        <h1>PERFIL</h1>
+
+        
+      
+      <form class="form" action="/perfil" method="post"> 
+      
         <div class="nome">
       
-          <h3>Nome</h3>
+          <h3>NOME</h3>
          <input value="<%= user.name %>" name="name" />  
       
-          <br>
+    
       
         </div>
         <div class="email">
@@ -31,7 +32,6 @@
           <h3>EMAIL</h3>
           <p>  "<%= user.email %>"  </p> 
       
-          <br>
         </div>
       
         <div class="condominio">
@@ -39,20 +39,19 @@
           <h3>CONDOMINIO</h3>
            <input value="<%= user.condominio %>" name="condominio" />  
 
-
-          <br>
         </div>
       
         <div class="unidade">
           <h3>UNIDADE</h3>
           <input value="<%= user.unidade %>" name="unidade" /> 
-          <br>
+          
         </div>
+        </form>
 
         <button class="btn" type="submit">SALVAR</button> 
       </div>
-    </form>
-      
+    
+      </body>
       
 
 

@@ -4,8 +4,13 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+  
+}
+
+body {
    font-family: 'Lato', sans-serif;
 }
+
 
 h1{
          
@@ -19,10 +24,45 @@ h1{
 
  div{
     text-align: center;
+    align-items: center;
+    justify-content: center;
     
  }
 
-.container
+
+ .container {
+   
+   justify-content: center;
+   
+   background-color: #fff;
+   box-sizing: border-box;
+   flex-direction: column;
+   color:#0066cc;
+   padding-top: 50px;
+}
+
+
+.form {
+   display: flex;
+   flex-direction: column; /** Mantem os elementos do formulário um abaixo do outro **/
+   width: 30%;
+   margin: 8px;
+}
+
+.form input {
+   height: 45px;
+   border: none;
+   background-color: #ecf0f1;
+   width: 100%;
+}
+
+.label-input {
+   background-color: #ecf0f1;
+   display: flex;
+   align-items: center;
+   margin: 8px;
+}
+/**.container
  {
 padding-top: 30px;
 align-items: center;
@@ -38,7 +78,10 @@ box-sizing: border-box;
 margin-bottom: 20px ;
 
 }
+*/
 
+
+/**
 .nome{
  
    

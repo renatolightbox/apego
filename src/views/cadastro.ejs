@@ -4,6 +4,11 @@
 <link rel="stylesheet" href="/css/cadastro.css">
 
 <body>
+    <div class="logo">
+        <img src="/img/iconereservas.jpg"  alt="" width="100px" height="100px">
+        <h2>CADASTRO</h2>
+        </div>
+
     <div class="container">
 
         <% if (locals.error) { %>
@@ -11,7 +16,7 @@
         <%} %>
 
         
-        <h2 class="titulo">CADASTRO</h2>
+        
         <form class="form" action="/cadastro" method="POST">
             <label class="label-input">
                 <input type="text"  name="username" placeholder="Nome">

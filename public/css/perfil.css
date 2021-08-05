@@ -66,6 +66,15 @@ form {
      
 }
 
+p{
+   height: 45px;
+   border: none;
+   background-color: #e8f0fe;
+   width: 300px;
+   margin:15px ;
+   padding: 5px;
+
+}
 
 
 
@@ -78,14 +87,10 @@ form {
    padding: 5px;
 }
 
-.email{
-   margin:15px ;
-   background-color:#e8f0fe;
-   width: 300px;
-   height: 45px;
-   text-align: center;
 
-}
+   
+
+
 
 .btn {
    border-radius: 15px;
@@ -102,3 +107,18 @@ form {
    border: 1px solid #0066cc;
 }
 
+
+footer{
+  
+   background: #0066cc;  
+   color: white;
+   padding: 30px;
+   display: flex;
+   justify-content: end;
+}
+
+.footer-card{
+   cursor: pointer;
+   padding: 10px;
+
+}

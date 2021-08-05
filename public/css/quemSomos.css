@@ -13,6 +13,22 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+.logo {
+  text-align: center;
+  color:#0066cc;
+  padding-bottom: 10px ;
+   border: 30px;
+}
+
+img {
+  position:relative;
+  max-width:150px;
+  border: 30px;
+  padding-top: 10px ;
+}
+
+
+
 main{
     margin: 0;
     border: 0;
@@ -23,9 +39,9 @@ main{
   
 }
 
-h1{
+h2{
     text-align: center;
-    font-size: 40px;
+    font-weight: 900;
     height: 100px;
     padding-top: 30px;
   padding-bottom: 30px;

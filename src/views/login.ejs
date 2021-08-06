@@ -3,13 +3,17 @@
 <link rel="stylesheet" href="/css/login.css">
 
 <body>
+    <div class="logo">
+        <img src="/img/logo3.jpg"  alt="" width="130px" height="130px">
+        <h2>LOGIN</h2>
+        </div>
     <div class="container">
         
         <% if (locals.error) { %>
             <%= locals.error %>
         <%} %>
         
-        <h2 class="title">LOGIN</h2>
+        
         <form class="form" action="/login" method="post">
             <label class="label-input">
                 <input type="text" name="username" id="username" placeholder="Seu E-mail">

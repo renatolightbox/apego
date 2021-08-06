@@ -10,6 +10,31 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.logo {
+    text-align: center;
+    color:#0066cc;
+    padding-bottom: 10px ;
+     border: 30px;
+     align-items: center;
+     padding-top: 10px;
+  }
+
+  img{
+    border-left:  20px;
+  }
+ 
+ 
+     h2{
+          
+       color: #0066cc;
+       justify-content: center;
+       margin-bottom: 20px;
+       font-weight: 900;
+       padding: 10px;
+       align-items: center;
+    
+    }
+
 .container {
     display: flex;
     justify-content: center;

@@ -3,56 +3,78 @@
 
     <%- include('partials/header')%> 
     <link rel="stylesheet" href="/css/perfil.css">
+    <body>
+      <div class="container ">
 
-    <div>
-        <img src="/img/iconeperfil.jpg" width="150px" height="150px">
-      
-        <h1>PERFIL </h1>
-
-        
         <% if (locals.message) { %>
           <%= locals.message %>
       <%} %>
 
+          
+        <div class="logo">
+          <img src="/img/iconeperfil.jpg"  alt="" width="120px" height="120px">
+          <h2>PERFIL </h2>
+          </div>
+        
       
-      </div>
-      <form action="/perfil" method="post"> 
-      <div class="container ">
+      <form class="form" action="/perfil" method="post"> 
+      
         <div class="nome">
       
-          <h3>Nome</h3>
-         <input value="<%= user.name %>" name="name" />  
+          <h3>NOME</h3>
+         <input class="nome" value="<%= user.name %>" name="name" />  
       
-          <br>
+    
       
         </div>
         <div class="email">
       
           <h3>EMAIL</h3>
-          <p>  "<%= user.email %>"  </p> 
+          <p class="email">  <%= user.email %>  </p> 
       
-          <br>
         </div>
       
         <div class="condominio">
       
           <h3>CONDOMINIO</h3>
-           <input value="<%= user.condominio %>" name="condominio" />  
+             
+           <p class="condominio">  <%= user.condominio %>  </p> 
 
 
-          <br>
         </div>
       
         <div class="unidade">
           <h3>UNIDADE</h3>
-          <input value="<%= user.unidade %>" name="unidade" /> 
-          <br>
+          
+          <p class="unidade">  <%= user.unidade %> </p> 
+          
         </div>
+        </form>
 
         <button class="btn" type="submit">SALVAR</button> 
       </div>
-    </form>
-      
+    
+      </body>
+
+      <footer>
+        <section class="flex-container">
+       <div class="footer-card">
+           <h5>ApeGo - 2021 - Todos os direitos reservados.</h5>
+       </div>
+       
+       <div class="footer-card">
+           <img href="https://facebook.com" src="/img/face-icon-white.svg" width="30px" height="30px" hspace="15px">
+           <img href="https://instagram.com" src="/img/insta-icon-white.svg" width="30px" height="30px" hspace="15px">
+    
+           
+    
+       </div>
+       </section>
+    </footer> 
+    
+    </html>
+    
+    
       
 
 

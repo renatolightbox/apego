@@ -12,14 +12,15 @@
     }
 
       
-    h1{
+    h2{
          
          color: #0066cc;
          justify-content: center;
          margin-bottom: 20px;
-         font-size: 10px;
+         font-weight: 900;
       
       }
+     
 
 
 section {

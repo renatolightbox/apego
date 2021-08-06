@@ -13,6 +13,26 @@
     font-size: 16px;
   }
 
+  .logo {
+    text-align: center;
+    color:#0066cc;
+    padding-bottom: 10px ;
+     border: 30px;
+     align-items: center;
+     padding-top: 20px;
+  }
+ 
+ 
+     h2{
+          
+       color: #0066cc;
+       justify-content: center;
+       margin-bottom: 20px;
+       font-weight: 900;
+       padding: 10px;
+    
+    }
+
   a{
     text-decoration: none;
   }
@@ -78,64 +98,22 @@ body {
 }
 
 div.lista-contatos {
-    padding: 30px 30px 30px 80px;
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+    background-color:#e8f0fe;
+    margin-left: 450px;
+    margin-right: 450px;
+    margin-bottom: 50px ;
+    align-items: center;
+    border-radius: 10px  ;
+    border: solid 1px #3188df;
 }
 
-h3.titulo-aviso {
+h3 {
   margin: 10px;
-}
-img.foto-quadra {
-    width: 500px;
-    margin: 30px 0px 0px 0px;
+  color: #0066cc;
 }
 
-div.aviso2 {
-  z-index: -1;
-  position: relative;
-  text-align: center;
-  padding: 20px 0px 20px 0px;
-  margin: 10px 300px 10px 300px;
-  border: 30px 30px 30px 30px;
-  border: 5px solid #3566cc;
-  background-color: #3565cc2c;
-}
-
-img.foto-sala-de-festas {
-    width: 500px;
-    margin: 30px 0px 0px 0px;
-}
-
-div.aviso3 {
-  z-index: -1;
-  position: relative;
-  text-align: center;
-  padding: 20px 0px 20px 0px;
-  margin: 10px 300px 10px 300px;
-  border: 30px 30px 30px 30px;
-  border: 5px solid #3566cc;
-  background-color: #3565cc2c;
-}
-
-img.foto-projeto-verde {
-  width: 500px;
-  margin: 30px 0px 0px 0px;
-}
-
-div.aviso4 {
-  z-index: -1;
-  position: relative;
-  text-align: center;
-  padding: 20px 0px 20px 0px;
-  margin: 10px 300px 10px 300px;
-  border: 30px 30px 30px 30px;
-  border: 5px solid #3566cc;
-  background-color: #3565cc2c;
-}
-
-img.foto-familia-mascara {
-  width: 500px;
-  margin: 30px 0px 0px 0px;
-}
 
 footer {
     color: white;

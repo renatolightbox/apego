@@ -63,6 +63,11 @@ class SiteController {
 
   }
 
+  static AprovarPage(req, res) {
+    res.render('aprovar', { title: 'Express' });
+
+  }
+
   //static ReservasPage(req, res) {
   //  res.render('reservas', { title: 'Express' });
   // }

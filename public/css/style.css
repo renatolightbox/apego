@@ -14,7 +14,7 @@ body {
 a{
   text-decoration: none;
 }
-header{
+/* header{
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -23,7 +23,7 @@ header{
   justify-content: space-between;
   align-items: center;
   padding: 30px 70px;
-}
+} */
 .nav-area{
   list-style: none;
 }

@@ -1,69 +1,136 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-  }
- .logo {
+   
+ }
+ 
+ body {
+    font-family: 'Lato', sans-serif;
+ }
+
+
+.logo {
     text-align: center;
     color:#0066cc;
     padding-bottom: 10px ;
+     border: 30px;
+     align-items: center;
+  }
+ 
+ 
+     h2{
+          
+       color: #0066cc;
+       justify-content: center;
+       margin-bottom: 20px;
+       font-weight: 900;
+       padding: 10px;
     
- 
     }
 
- 
-body {
+
+
+table {
     font-family: 'Lato', sans-serif;
+    max-width: 75%;
+    background-color: transparent;
+    padding-left: 150px;
+    border-spacing: 0;
+    padding-bottom: 50px ;
+  }
+  
+  .table { 
+    width: 75%;
+    margin-bottom: 20px;
+  }
+
+  .header{
+      text-align: center;
+      align-items: center;
+      background-color: #e8f0fe;
+      color: #0066cc;
+  }
+  
+  th,
+   td {
+    font-weight: normal;
+    font-size: 12px;
+    padding: 8px 15px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: middle;
+    border-top: 1px solid #dddddd;
+  }
+
+  td{
+    border: solid #e8f0fe 1px;
+    text-align: center;
+  }
+
+
+  thead th {
+    background: #0066cc;
+    vertical-align: bottom;
+    color: #fff;
+  }   
+  .table tbody > tr:nth-child(odd) > td,
+  .table tbody > tr:nth-child(odd) > th {
+    background-color: #fafafa;
+  }    
+  .table .t-small {
+    width: 5%;
+  }
+  .table .t-medium {
+    width: 15%;
+  }
+  
+  
+  
+  /* Small Sizes */
+  @media (max-width: 480px) { 
+
+    .janeiro{
+        display: flex;
+        flex-direction: column;
+    }
+    thead:first-child{
+        display: block;
+        float: left;
+        padding-top: 40px;
+    }
+    tbody{
+        display: table-row-group;
+    }
+    
+    table{
+        
+        margin: 0px ;
+        width: 100%;
+        display: flex;
     }
 
-        .custom-table{
-            
-            width:100%;
-            border:solid 1px #c0c0c0;
-            font-size:11px;
-            height: 100%;
-        }
-       .custom-table td{
-            text-align:left;
-            padding:8px;
-            border:solid 1px #c0c0c0
-        }
-        
-        .custom-table th{
-            text-align:left;
-            padding:8px;
-            border:solid 1px #c0c0c0;
-            color:#000080;
-            
-        }
-        custom-table tr:nth-child(odd){
-            background-color:#f7f7ff
-        }
-        .custom-table>thead>tr{
-            background-color:#dde8f7!important
-        }
-        .tbtn{
-            border:0;
-            
-            background-color:transparent;
-            font-size:13px;
-            cursor:pointer
-        }
-        .toggler{display:none
-        }
-        
-        .toggler1{
-            display:table-row;
-        }
-        .custom-table a{
-            color: #0033cc;
-        }
-        .custom-table a:hover{
-            color: #f00;
-        }
-        .page-header{
-            background-color: #eee;
-        }
-      
+    .t-small{
+        display: none;
+    }
+
+    
+    .titulo td{
+        max-width: 100px;
+    }
+
+  
+  
+    .table td:not(:first-child) {
+      display: block;
+    }
+  }
+
+  .logo{
+      align-items: center;
+  }
+
+  

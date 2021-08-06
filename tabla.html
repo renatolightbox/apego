@@ -1,20 +1,19 @@
+<!-- TABLE -->
+<!DOCTYPE html>
+<html lang="pt-br">
 
-<%-include('partials/head')  %> 
-<link rel="stylesheet" href="/css/contas.css">
-<%- include('partials/header')%> 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>contas</title>
 
-<body>
-    <div class="logo">
-        <img src="/img/iconecontas.jpg"  alt="" width="120px" height="120px">
-        <h2>CONTAS</h2>
-        </div>
-
-
-
-<table class="table">
+<link rel="stylesheet" href="/tabela.css">
+</head>
+<table class="table table-action">
   
     <thead>
-      <tr class="janeiro">
+      <tr>
         <th class="t-small"></th>
                     <th>JANEIRO</th>
                     <th>FEVEREIRO</th>
@@ -33,18 +32,12 @@
     
     <tbody>
         <tr>
-            
+            <td colspan="20" class="header"> DEPARTAMENTO PESSOAL</td>
          
         </tr>
-
-        <tr>
-            <td colspan="20"  class="header"> DEPARTAMENTO PESSOAL</td>
-            </tr>
-      
-            <tr>
       <tr>
         
-        <td class="titulo">SALARIO </td>
+        <td>SALARIO </td>
         <td>11.242,76</td>
         <td>11.775,29</td>
         <td>12.821,73</td>
@@ -154,7 +147,6 @@
       <td>256,89</td>
       <td>312,14</td>
       <td>223,99</td>
-      <td>0,00</td>
       <td>0,00</td>
       <td>0,00</td>
       <td>0,00</td>
@@ -277,7 +269,6 @@
 
     </tbody>
   </table>
-</body>
-<%- include('partials/footer')%>
 
+</html>
   

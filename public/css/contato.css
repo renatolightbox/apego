@@ -13,6 +13,12 @@
     font-size: 16px;
   }
 
+  .main-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .logo {
     text-align: center;
     color:#0066cc;
@@ -101,12 +107,17 @@ div.lista-contatos {
     padding: 30px 30px 30px 30px;
     text-align: center;
     background-color:#e8f0fe;
-    margin-left: 450px;
-    margin-right: 450px;
+    width: 40vh;
     margin-bottom: 50px ;
     align-items: center;
     border-radius: 10px  ;
     border: solid 1px #3188df;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 350px;
 }
 
 h3 {

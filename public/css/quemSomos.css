@@ -13,15 +13,15 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.logo {
+.titulo-quem-somos {
   text-align: center;
   color:#0066cc;
   padding-bottom: 10px ;
    border: 30px;
+   margin-top: 50px;
 }
 
 img {
-  position:relative;
   max-width:150px;
   border: 30px;
   padding-top: 10px ;
@@ -70,11 +70,16 @@ p{
   section{
     max-width: 100%;
     height: 100%;
-     
     display: flex;
-    flex-wrap: nowrap;
-     flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-around;
+  }
+
+  @media (max-width: 858px){
+    section{
+      flex-direction: column;
+    }
   }
 
  

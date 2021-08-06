@@ -51,6 +51,7 @@ body {
     flex-direction: column; /** Mantem os elementos do formulário um abaixo do outro **/
     width: 30%;
     margin: 8px;
+    min-width: 300px;
 }
 
 .form input {
